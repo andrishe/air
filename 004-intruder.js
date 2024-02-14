@@ -8,13 +8,13 @@ const intruderNum = (numb) => {
     process.exit(1);
   }
 
-  let array = 0;
+  let sum = 0;
 
   for (let i = 0; i < number.length; i++) {
-    array ^= number[i];
+    sum ^= number[i];
   }
-  return array;
+  return sum;
 };
 
-const numb = readlineSync.question("Entrez votre phrase: ");
+const numb = readlineSync.question("Entrez des numéros: ");
 console.log(intruderNum(numb));
