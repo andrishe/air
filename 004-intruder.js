@@ -4,7 +4,7 @@ const intruderNum = (numb) => {
   let number = numb.split(" ").map(Number);
 
   if (number.some(isNaN)) {
-    console.log("Error entrez une phrase");
+    console.log("Error entrez des chiffres");
     process.exit(1);
   }
 
