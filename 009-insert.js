@@ -14,7 +14,14 @@ const pushNumber = (number, insert) => {
     process.exit(1);
   }
 
-  numberArray.sort((a, b) => a - b);
+  let i = numberArray.length - 2;
+
+  while (i >= 0 && numberArray[i] > insertNumber) {
+    numberArray[i + 1] = numberArray[i];
+    i--;
+  }
+
+  numberArray[i + 1] = insertNumber;
 
   return console.log(numberArray.join(" "));
 };
