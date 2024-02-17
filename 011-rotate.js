@@ -1,4 +1,5 @@
 const readlineSync = require("readline-sync");
+
 const rotateArray = (str) => {
   if (!isNaN(str)) {
     console.log("Error entrez une phrase");
