@@ -13,3 +13,5 @@ const splitStr = (str) => {
 const str = readlineSync.question("Entrez votre phrase: ");
 
 console.log(splitStr(str));
+
+module.exports = splitStr;
