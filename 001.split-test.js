@@ -1,11 +1,12 @@
 const splitStr = require("./001-split");
 
-describe("test de la function splitStr", () => {
-  test("test function split sépare le str en tableau ", () => {
-    const splitStr = "bonjour comment cava";
+describe("test de la fonction splitStr", () => {
+  test("la fonction splitStr sépare la chaîne en tableau avec des sauts de ligne", () => {
+    const inputStr = "bonjour comment cava";
+    const expectedOutput = "bonjour\ncomment\ncava";
 
-    const strSplit = splitStr.split(" ").join("\n");
+    const result = splitStr(inputStr);
 
-    expect(strSplit).toBe("bonjour\ncomment\ncava");
+    expect(result).toBe(expectedOutput);
   });
 });

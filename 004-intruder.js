@@ -18,3 +18,5 @@ const intruderNum = (numb) => {
 
 const numb = readlineSync.question("Entrez des numéros: ");
 console.log(intruderNum(numb));
+
+module.exports = intruderNum;
