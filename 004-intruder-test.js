@@ -1,4 +1,4 @@
-const intruderNum = require("./004-intruder");
+const intruderNum = require("./005-adjacent");
 
 describe("fonction qui supprime l'intrus", () => {
   test("intruderNum retourne l'intrus", () => {

@@ -16,9 +16,11 @@ const removeStrDuplicate = (strDuplicate) => {
     }
   }
 
-  console.log(strResult);
+  return strResult;
 };
 
 const strDuplicate = readlineSync.question("Entrez votre phrase: ");
 
-removeStrDuplicate(strDuplicate);
+console.log(removeStrDuplicate(strDuplicate));
+
+module.exports = removeStrDuplicate;
