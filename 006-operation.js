@@ -23,11 +23,13 @@ const operator = (operation, number, number2) => {
       result.push(numberArray[i] - num);
     }
   }
-  console.log(result.join(" "));
+  return result.join(" ");
 };
 
 const operation = readlineSync.question("Quelle opération souhaitez-vous: ");
 const number = readlineSync.question("Entrez une liste de nombres: ");
 const number2 = readlineSync.question("Entrez un nombre: ");
 
-operator(operation, number, number2);
+console.log(operator(operation, number, number2));
+
+module.exports = operator;
