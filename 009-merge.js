@@ -45,3 +45,5 @@ const sortedArray = sortMerge(
 );
 
 console.log(sortedArray.join(" "));
+
+module.exports = sortMerge;

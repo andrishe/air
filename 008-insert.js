@@ -23,10 +23,12 @@ const pushNumber = (number, insert) => {
 
   numberArray[i + 1] = insertNumber;
 
-  return console.log(numberArray.join(" "));
+  return numberArray.join(" ");
 };
 
 const number = readlineSync.question("Entrez une liste de nombres: ");
-const insert = readlineSync.question("Entrez une caractère: ");
+const insert = readlineSync.question("Entrez un nombre: ");
 
-pushNumber(number, insert);
+console.log(pushNumber(number, insert));
+
+module.exports = pushNumber;

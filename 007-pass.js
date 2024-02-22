@@ -8,10 +8,12 @@ const removeContainsStr = (str, char) => {
   const array = str.split(" ");
   const newArray = array.filter((arr) => !arr.toLowerCase().includes(char));
 
-  return console.log(newArray.join(" "));
+  return newArray.join(" ");
 };
 
 const str = readlineSync.question("Entrez votre phrase: ");
 const char = readlineSync.question("Entrez une caractère: ");
 
-removeContainsStr(str, char);
+console.log(removeContainsStr(str, char));
+
+module.exports = removeContainsStr;

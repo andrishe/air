@@ -20,3 +20,5 @@ const rotateArray = (str) => {
 const str = readlineSync.question("Entrez le nombre de ligne: ");
 
 console.log(rotateArray(str));
+
+module.exports = rotateArray;
