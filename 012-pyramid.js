@@ -6,9 +6,9 @@ const pyramid = (rows, str) => {
     process.exit(1);
   }
 
-  for (let i = 1; i <= rows; i++) {
-    let pyramidStr = "";
+  let pyramidStr = "";
 
+  for (let i = 1; i <= rows; i++) {
     for (let j = 1; j <= rows - i; j++) {
       pyramidStr += " ";
     }
@@ -20,11 +20,13 @@ const pyramid = (rows, str) => {
     for (let j = i + 1; j <= rows; j++) {
       pyramidStr += " ";
     }
-
-    console.log(pyramidStr);
+    pyramidStr += "\n";
   }
+  return pyramidStr;
 };
 const rows = readlineSync.question("Entrez le nombre de ligne: ");
 const str = readlineSync.question("Entrez un caractère: ");
 
-pyramid(rows, str);
+console.log(pyramid(rows, str));
+
+module.exports = pyramid;
