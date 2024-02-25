@@ -31,3 +31,5 @@ const input = readlineSync.question(
 const numbArray = input.split(" ").map(Number);
 
 console.log("Résultat du tri rapide:", quickSort(numbArray).join(" "));
+
+module.exports = quickSort;
