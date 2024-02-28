@@ -6,8 +6,9 @@ const display = async (path) => {
       if (err) {
         console.error("Erreur lors de la lecture du fichier :", err);
         reject(err);
+      } else {
+        resolve(data);
       }
-      resolve(data);
     });
   });
 };
